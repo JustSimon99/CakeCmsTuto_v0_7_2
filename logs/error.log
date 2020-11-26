@@ -6622,3 +6622,223 @@ Request URL: /getKrajRegions
 Referer URL: http://localhost/420-5b7/tests/section_7/AngularJsTutorialsPoint/public_html/listesliees_v0_0_5.html
 
 
+2020-11-26 17:36:29 Error: [Cake\View\Exception\MissingTemplateException] Template file "Api\KrajRegions\index.ctp" is missing. (C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\View\View.php:1605)
+Exception Attributes: array (
+  'file' => 'Api\\KrajRegions\\index.ctp',
+)
+#0 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\View\View.php(888): Cake\View\View->_getViewFileName('Api\\KrajRegions...')
+#1 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Controller\Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\KrajRegionsController))
+#4 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /api/kraj_regions
+Referer URL: http://localhost/420-5b7/tests/section_7/AngularJsTutorialsPoint/public_html/kraj_regions.html
+
+
+2020-11-26 17:36:41 Error: [Cake\View\Exception\MissingTemplateException] Template file "Api\KrajRegions\index.ctp" is missing. (C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\View\View.php:1605)
+Exception Attributes: array (
+  'file' => 'Api\\KrajRegions\\index.ctp',
+)
+#0 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\View\View.php(888): Cake\View\View->_getViewFileName('Api\\KrajRegions...')
+#1 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Controller\Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\KrajRegionsController))
+#4 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /api/kraj_regions
+Referer URL: http://localhost/420-5b7/tests/section_7/AngularJsTutorialsPoint/public_html/kraj_regions.html
+
+
+2020-11-26 18:49:32 Error: [Cake\View\Exception\MissingTemplateException] Template file "Api\KrajRegions\index.ctp" is missing. (C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\View\View.php:1605)
+Exception Attributes: array (
+  'file' => 'Api\\KrajRegions\\index.ctp',
+)
+#0 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\View\View.php(888): Cake\View\View->_getViewFileName('Api\\KrajRegions...')
+#1 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Controller\Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\KrajRegionsController))
+#4 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /api/kraj_regions
+Referer URL: http://localhost/420-5b7/tests/section_7/AngularJsTutorialsPoint/public_html/kraj_regions.html
+
+
+2020-11-26 19:16:55 Error: [ParseError] syntax error, unexpected '' ?> : ' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' (C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\src\Template\ObecCities\add.ctp:46)
+#0 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\View\View.php(1393): Cake\View\View->_evaluate('C:\\Ampps39\\www\\...', Array)
+#1 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\View\View.php(892): Cake\View\View->_render('C:\\Ampps39\\www\\...')
+#2 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Controller\Controller.php(791): Cake\View\View->render(NULL, NULL)
+#3 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ObecCitiesController))
+#5 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+Request URL: /obec-cities/add
+Referer URL: http://localhost/420-5b7/tests/section_7/cakecmstuto_0_7_2/
+
+
+2020-11-26 19:43:33 Error: [Cake\Controller\Exception\MissingActionException] Action KrajRegionsController::add() could not be found, or is not accessible. (C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'KrajRegionsController',
+  'action' => 'add',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\KrajRegionsController))
+#2 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /kraj-regions/add
+Referer URL: http://localhost/420-5b7/tests/section_7/cakecmstuto_0_7_2/obec-cities/add
+
+
+2020-11-26 19:55:25 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'kraj_region_id' doesn't have a default value (C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:37)
+#0 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(37): PDOStatement->execute(NULL)
+#1 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Database\Connection.php(342): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Database\Connection.php(345): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Database\Query.php(218): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\ORM\Table.php(2136): Cake\Database\Query->execute()
+#8 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\ORM\Table.php(2028): Cake\ORM\Table->_insert(Object(App\Model\Entity\ObecCity), Array)
+#9 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\ORM\Table.php(1941): Cake\ORM\Table->_processSave(Object(App\Model\Entity\ObecCity), Object(ArrayObject))
+#10 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\ORM\Table.php(1646): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Database\Connection.php(746): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\ORM\Table.php(1647): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\ORM\Table.php(1942): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\src\Controller\ObecCitiesController.php(85): Cake\ORM\Table->save(Object(App\Model\Entity\ObecCity))
+#15 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Controller\Controller.php(606): App\Controller\ObecCitiesController->add()
+#16 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#17 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ObecCitiesController))
+#18 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\webroot\index.php(40): Cake\Http\Server->run()
+#31 {main}
+Request URL: /obec-cities/add
+Referer URL: http://localhost/420-5b7/tests/section_7/cakecmstuto_0_7_2/obec-cities/add
+
+
+2020-11-26 20:01:19 Error: [ParseError] syntax error, unexpected 'if' (T_IF) (C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\src\Controller\ObecCitiesController.php:86)
+#0 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\Ampps39\\www\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Core\App.php(151): class_exists('App\\Controller\\...')
+#4 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Core\App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Obe...', 'App')
+#5 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(93): Cake\Core\App::className('ObecCities', 'Controller', 'Controller')
+#6 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+Request URL: /obec-cities/add
+Referer URL: http://localhost/420-5b7/tests/section_7/cakecmstuto_0_7_2/obec-cities/add
+
+
+2020-11-26 20:15:33 Error: [Cake\Controller\Exception\MissingActionException] Action KrajRegionsController::view() could not be found, or is not accessible. (C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'KrajRegionsController',
+  'action' => 'view',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\KrajRegionsController))
+#2 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Ampps39\www\420-5b7\tests\section_7\cakecmstuto_0_7_2\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /kraj-regions/view/28
+Referer URL: http://localhost/420-5b7/tests/section_7/cakecmstuto_0_7_2/obec-cities?page=313
+
+

@@ -14713,3 +14713,655 @@ UNION (SELECT ArticlesFiles.id AS `ArticlesFiles__id`, ArticlesFiles.article_id 
 2020-11-26 16:05:04 Debug: duration=3 rows=1 INSERT INTO kraj_regions (kod, nazev) VALUES ('CA008', 'Lavalsky Kraj added')
 2020-11-26 16:05:04 Debug: duration=0 rows=0 COMMIT
 2020-11-26 16:05:06 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 17:33:00 Debug: duration=94 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 17:33:00 Debug: duration=18 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 17:33:00 Debug: duration=54 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 17:33:00 Debug: duration=8 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 17:33:00 Debug: duration=3 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 17:33:00 Debug: duration=6 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 17:33:00 Debug: duration=18 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 17:33:00 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 17:33:01 Debug: duration=8 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 17:33:01 Debug: duration=7 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 17:36:29 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 17:36:29 Debug: duration=3 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 17:36:29 Debug: duration=20 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 17:36:29 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 17:37:37 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 18:49:31 Debug: duration=15 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 18:49:31 Debug: duration=7 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 18:49:31 Debug: duration=23 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 18:49:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 18:50:08 Debug: duration=5 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:03:06 Debug: duration=20 rows=9 SHOW FULL COLUMNS FROM `articles`
+2020-11-26 19:03:06 Debug: duration=9 rows=4 SHOW INDEXES FROM `articles`
+2020-11-26 19:03:06 Debug: duration=44 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'articles' AND rc.TABLE_NAME = 'articles'
+2020-11-26 19:03:06 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'articles'
+2020-11-26 19:03:06 Debug: duration=4 rows=7 SHOW FULL COLUMNS FROM `users`
+2020-11-26 19:03:06 Debug: duration=6 rows=1 SHOW INDEXES FROM `users`
+2020-11-26 19:03:06 Debug: duration=32 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2020-11-26 19:03:06 Debug: duration=4 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2020-11-26 19:03:06 Debug: duration=4 rows=4 SHOW FULL COLUMNS FROM `tags`
+2020-11-26 19:03:06 Debug: duration=4 rows=2 SHOW INDEXES FROM `tags`
+2020-11-26 19:03:06 Debug: duration=33 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'tags' AND rc.TABLE_NAME = 'tags'
+2020-11-26 19:03:06 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'tags'
+2020-11-26 19:03:06 Debug: duration=7 rows=6 SHOW FULL COLUMNS FROM `files`
+2020-11-26 19:03:06 Debug: duration=4 rows=1 SHOW INDEXES FROM `files`
+2020-11-26 19:03:06 Debug: duration=32 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'files' AND rc.TABLE_NAME = 'files'
+2020-11-26 19:03:07 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'files'
+2020-11-26 19:03:07 Debug: duration=15 rows=11 SELECT Articles.id AS `Articles__id`, Articles.user_id AS `Articles__user_id`, Articles.obec_city_id AS `Articles__obec_city_id`, Articles.title AS `Articles__title`, Articles.slug AS `Articles__slug`, Articles.body AS `Articles__body`, Articles.published AS `Articles__published`, Articles.created AS `Articles__created`, Articles.modified AS `Articles__modified`, Users.id AS `Users__id`, Users.email AS `Users__email`, Users.password AS `Users__password`, Users.uuid AS `Users__uuid`, Users.confirmed AS `Users__confirmed`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM articles Articles INNER JOIN users Users ON Users.id = (Articles.user_id) LIMIT 20 OFFSET 0
+2020-11-26 19:03:07 Debug: duration=5 rows=2 SHOW FULL COLUMNS FROM `articles_tags`
+2020-11-26 19:03:07 Debug: duration=8 rows=3 SHOW INDEXES FROM `articles_tags`
+2020-11-26 19:03:07 Debug: duration=37 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'articles_tags' AND rc.TABLE_NAME = 'articles_tags'
+2020-11-26 19:03:07 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'articles_tags'
+2020-11-26 19:03:07 Debug: duration=10 rows=6 SHOW FULL COLUMNS FROM `i18n`
+2020-11-26 19:03:07 Debug: duration=6 rows=8 SHOW INDEXES FROM `i18n`
+2020-11-26 19:03:07 Debug: duration=31 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'i18n' AND rc.TABLE_NAME = 'i18n'
+2020-11-26 19:03:07 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'i18n'
+2020-11-26 19:03:07 Debug: duration=17 rows=9 SELECT ArticlesTags.article_id AS `Tags_CJoin__article_id`, ArticlesTags.tag_id AS `Tags_CJoin__tag_id`, Tags.id AS `Tags__id`, Tags.title AS `Tags__title`, Tags.created AS `Tags__created`, Tags.modified AS `Tags__modified`, Tags_title_translation.id AS `Tags_title_translation__id`, Tags_title_translation.content AS `Tags_title_translation__content` FROM tags Tags INNER JOIN articles_tags ArticlesTags ON Tags.id = (ArticlesTags.tag_id) LEFT JOIN i18n Tags_title_translation ON (Tags_title_translation.model = 'Tags' AND Tags_title_translation.field = 'title' AND Tags_title_translation.locale = 'fr_CA' AND Tags.id = (Tags_title_translation.foreign_key)) WHERE ArticlesTags.article_id in (1,2,4,5,6,7,10,12,13,14,15)
+2020-11-26 19:03:07 Debug: duration=4 rows=3 SHOW FULL COLUMNS FROM `articles_files`
+2020-11-26 19:03:07 Debug: duration=3 rows=3 SHOW INDEXES FROM `articles_files`
+2020-11-26 19:03:07 Debug: duration=33 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'articles_files' AND rc.TABLE_NAME = 'articles_files'
+2020-11-26 19:03:07 Debug: duration=9 rows=1 SHOW TABLE STATUS WHERE Name = 'articles_files'
+2020-11-26 19:03:07 Debug: duration=7 rows=5 SELECT ArticlesFiles.id AS `Files_CJoin__id`, ArticlesFiles.article_id AS `Files_CJoin__article_id`, ArticlesFiles.file_id AS `Files_CJoin__file_id`, Files.id AS `Files__id`, Files.name AS `Files__name`, Files.path AS `Files__path`, Files.created AS `Files__created`, Files.modified AS `Files__modified`, Files.status AS `Files__status` FROM files Files INNER JOIN articles_files ArticlesFiles ON Files.id = (ArticlesFiles.file_id) WHERE ArticlesFiles.article_id in (1,2,4,5,6,7,10,12,13,14,15)
+2020-11-26 19:03:07 Debug: duration=5 rows=1 SELECT (COUNT(*)) AS `count` FROM articles Articles INNER JOIN users Users ON Users.id = (Articles.user_id)
+2020-11-26 19:10:11 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 19:10:11 Debug: duration=2 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 19:10:11 Debug: duration=15 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 19:10:11 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 19:10:11 Debug: duration=3 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 19:10:11 Debug: duration=2 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 19:10:11 Debug: duration=14 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 19:10:11 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 19:10:11 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 19:10:11 Debug: duration=2 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 19:10:11 Debug: duration=12 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 19:10:11 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 19:10:11 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:10:11 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:10:12 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:10:12 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:15:29 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 19:15:29 Debug: duration=3 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 19:15:29 Debug: duration=20 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 19:15:29 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 19:15:29 Debug: duration=3 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 19:15:29 Debug: duration=2 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 19:15:29 Debug: duration=19 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 19:15:29 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 19:15:29 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 19:15:29 Debug: duration=2 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 19:15:29 Debug: duration=19 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 19:15:29 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 19:15:29 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:15:29 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:15:30 Debug: duration=2 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:15:30 Debug: duration=3 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:16:02 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:16:02 Debug: duration=2 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:16:03 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:16:03 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:16:55 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:16:55 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:18:22 Debug: duration=5 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 19:18:22 Debug: duration=4 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 19:18:22 Debug: duration=26 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 19:18:22 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 19:18:22 Debug: duration=3 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 19:18:22 Debug: duration=5 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 19:18:22 Debug: duration=23 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 19:18:22 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 19:18:22 Debug: duration=3 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 19:18:22 Debug: duration=3 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 19:18:22 Debug: duration=24 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 19:18:22 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 19:18:22 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:18:22 Debug: duration=3 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:18:23 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:18:23 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:19:17 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:19:17 Debug: duration=2 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:19:17 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:19:17 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:33:50 Debug: duration=4 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 19:33:50 Debug: duration=3 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 19:33:50 Debug: duration=21 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 19:33:50 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 19:33:50 Debug: duration=2 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 19:33:50 Debug: duration=3 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 19:33:50 Debug: duration=20 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 19:33:50 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 19:33:50 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 19:33:50 Debug: duration=2 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 19:33:50 Debug: duration=17 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 19:33:50 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 19:33:50 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:33:50 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:33:51 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:33:51 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:33:59 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:33:59 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:34:00 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:34:00 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:35:17 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:35:18 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:35:18 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:35:18 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:36:18 Debug: duration=9 rows=9 SHOW FULL COLUMNS FROM `articles`
+2020-11-26 19:36:18 Debug: duration=6 rows=4 SHOW INDEXES FROM `articles`
+2020-11-26 19:36:18 Debug: duration=32 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'articles' AND rc.TABLE_NAME = 'articles'
+2020-11-26 19:36:18 Debug: duration=4 rows=1 SHOW TABLE STATUS WHERE Name = 'articles'
+2020-11-26 19:36:18 Debug: duration=5 rows=7 SHOW FULL COLUMNS FROM `users`
+2020-11-26 19:36:18 Debug: duration=3 rows=1 SHOW INDEXES FROM `users`
+2020-11-26 19:36:18 Debug: duration=28 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2020-11-26 19:36:18 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2020-11-26 19:36:18 Debug: duration=3 rows=4 SHOW FULL COLUMNS FROM `tags`
+2020-11-26 19:36:18 Debug: duration=3 rows=2 SHOW INDEXES FROM `tags`
+2020-11-26 19:36:18 Debug: duration=25 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'tags' AND rc.TABLE_NAME = 'tags'
+2020-11-26 19:36:18 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'tags'
+2020-11-26 19:36:18 Debug: duration=3 rows=6 SHOW FULL COLUMNS FROM `files`
+2020-11-26 19:36:18 Debug: duration=3 rows=1 SHOW INDEXES FROM `files`
+2020-11-26 19:36:18 Debug: duration=25 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'files' AND rc.TABLE_NAME = 'files'
+2020-11-26 19:36:18 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'files'
+2020-11-26 19:36:18 Debug: duration=4 rows=11 SELECT Articles.id AS `Articles__id`, Articles.user_id AS `Articles__user_id`, Articles.obec_city_id AS `Articles__obec_city_id`, Articles.title AS `Articles__title`, Articles.slug AS `Articles__slug`, Articles.body AS `Articles__body`, Articles.published AS `Articles__published`, Articles.created AS `Articles__created`, Articles.modified AS `Articles__modified`, Users.id AS `Users__id`, Users.email AS `Users__email`, Users.password AS `Users__password`, Users.uuid AS `Users__uuid`, Users.confirmed AS `Users__confirmed`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM articles Articles INNER JOIN users Users ON Users.id = (Articles.user_id) LIMIT 20 OFFSET 0
+2020-11-26 19:36:18 Debug: duration=3 rows=2 SHOW FULL COLUMNS FROM `articles_tags`
+2020-11-26 19:36:18 Debug: duration=3 rows=3 SHOW INDEXES FROM `articles_tags`
+2020-11-26 19:36:18 Debug: duration=26 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'articles_tags' AND rc.TABLE_NAME = 'articles_tags'
+2020-11-26 19:36:18 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'articles_tags'
+2020-11-26 19:36:18 Debug: duration=3 rows=6 SHOW FULL COLUMNS FROM `i18n`
+2020-11-26 19:36:18 Debug: duration=3 rows=8 SHOW INDEXES FROM `i18n`
+2020-11-26 19:36:19 Debug: duration=26 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'i18n' AND rc.TABLE_NAME = 'i18n'
+2020-11-26 19:36:19 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'i18n'
+2020-11-26 19:36:19 Debug: duration=2 rows=9 SELECT ArticlesTags.article_id AS `Tags_CJoin__article_id`, ArticlesTags.tag_id AS `Tags_CJoin__tag_id`, Tags.id AS `Tags__id`, Tags.title AS `Tags__title`, Tags.created AS `Tags__created`, Tags.modified AS `Tags__modified`, Tags_title_translation.id AS `Tags_title_translation__id`, Tags_title_translation.content AS `Tags_title_translation__content` FROM tags Tags INNER JOIN articles_tags ArticlesTags ON Tags.id = (ArticlesTags.tag_id) LEFT JOIN i18n Tags_title_translation ON (Tags_title_translation.model = 'Tags' AND Tags_title_translation.field = 'title' AND Tags_title_translation.locale = 'fr_CA' AND Tags.id = (Tags_title_translation.foreign_key)) WHERE ArticlesTags.article_id in (1,2,4,5,6,7,10,12,13,14,15)
+2020-11-26 19:36:19 Debug: duration=6 rows=3 SHOW FULL COLUMNS FROM `articles_files`
+2020-11-26 19:36:19 Debug: duration=3 rows=3 SHOW INDEXES FROM `articles_files`
+2020-11-26 19:36:19 Debug: duration=29 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'articles_files' AND rc.TABLE_NAME = 'articles_files'
+2020-11-26 19:36:19 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'articles_files'
+2020-11-26 19:36:19 Debug: duration=2 rows=5 SELECT ArticlesFiles.id AS `Files_CJoin__id`, ArticlesFiles.article_id AS `Files_CJoin__article_id`, ArticlesFiles.file_id AS `Files_CJoin__file_id`, Files.id AS `Files__id`, Files.name AS `Files__name`, Files.path AS `Files__path`, Files.created AS `Files__created`, Files.modified AS `Files__modified`, Files.status AS `Files__status` FROM files Files INNER JOIN articles_files ArticlesFiles ON Files.id = (ArticlesFiles.file_id) WHERE ArticlesFiles.article_id in (1,2,4,5,6,7,10,12,13,14,15)
+2020-11-26 19:36:19 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM articles Articles INNER JOIN users Users ON Users.id = (Articles.user_id)
+2020-11-26 19:36:23 Debug: duration=6 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 19:36:23 Debug: duration=3 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 19:36:23 Debug: duration=27 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 19:36:23 Debug: duration=4 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 19:36:23 Debug: duration=3 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 19:36:23 Debug: duration=3 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 19:36:23 Debug: duration=26 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 19:36:23 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 19:36:23 Debug: duration=3 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 19:36:23 Debug: duration=3 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 19:36:23 Debug: duration=26 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 19:36:23 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 19:36:23 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:36:23 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:36:24 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:36:24 Debug: duration=3 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:37:01 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:37:01 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:37:12 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:37:12 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:37:12 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:37:12 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:38:21 Debug: duration=2 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:38:21 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:38:22 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:38:22 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:39:34 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 19:39:34 Debug: duration=2 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 19:39:34 Debug: duration=14 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 19:39:34 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 19:39:34 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 19:39:34 Debug: duration=2 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 19:39:34 Debug: duration=14 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 19:39:34 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 19:39:34 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:39:34 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:42:05 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 19:42:05 Debug: duration=1 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 19:42:05 Debug: duration=11 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 19:42:05 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 19:42:05 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 19:42:05 Debug: duration=1 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 19:42:05 Debug: duration=10 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 19:42:05 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 19:42:05 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 19:42:05 Debug: duration=1 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 19:42:05 Debug: duration=10 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 19:42:05 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 19:42:05 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:42:05 Debug: duration=0 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:42:06 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:42:06 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:42:24 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:42:24 Debug: duration=0 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:42:24 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:42:24 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:42:41 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:42:41 Debug: duration=0 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:42:41 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:42:41 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:43:24 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:43:24 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:43:25 Debug: duration=2 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:43:25 Debug: duration=1 rows=77 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:50:09 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 19:50:09 Debug: duration=2 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 19:50:09 Debug: duration=21 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 19:50:09 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 19:50:09 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 19:50:09 Debug: duration=2 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 19:50:09 Debug: duration=12 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 19:50:09 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 19:50:09 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 19:50:09 Debug: duration=1 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 19:50:10 Debug: duration=14 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 19:50:10 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 19:50:10 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:50:10 Debug: duration=1 rows=78 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 19:50:10 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 19:50:10 Debug: duration=0 rows=78 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 19:55:24 Debug: duration=3 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 19:55:24 Debug: duration=2 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 19:55:25 Debug: duration=16 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 19:55:25 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 19:55:25 Debug: duration=0 rows=0 BEGIN
+2020-11-26 19:55:25 Debug: duration=9 rows=0 INSERT INTO obec_cities (kod, nazev) VALUES ('012345', 'Ste-Rose')
+2020-11-26 19:55:25 Debug: duration=0 rows=0 ROLLBACK
+2020-11-26 19:57:24 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 19:57:24 Debug: duration=1 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 19:57:24 Debug: duration=10 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 19:57:24 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 19:57:24 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 19:57:24 Debug: duration=2 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 19:57:24 Debug: duration=11 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 19:57:24 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 19:57:24 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 19:57:24 Debug: duration=0 rows=78 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 20:01:37 Debug: duration=6 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 20:01:37 Debug: duration=2 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 20:01:37 Debug: duration=21 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 20:01:37 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 20:07:09 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 20:07:09 Debug: duration=1 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 20:07:09 Debug: duration=10 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 20:07:09 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 20:07:09 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 20:07:09 Debug: duration=1 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 20:07:09 Debug: duration=12 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 20:07:09 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 20:07:09 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 20:07:09 Debug: duration=1 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 20:07:09 Debug: duration=9 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 20:07:09 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 20:07:09 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 20:07:09 Debug: duration=0 rows=78 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 20:12:45 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 20:12:45 Debug: duration=2 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 20:12:45 Debug: duration=13 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 20:12:45 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 20:12:45 Debug: duration=1 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 20:12:45 Debug: duration=2 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 20:12:45 Debug: duration=13 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 20:12:45 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 20:12:45 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 20:12:45 Debug: duration=2 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 20:12:45 Debug: duration=13 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 20:12:45 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 20:12:45 Debug: duration=0 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 20:12:45 Debug: duration=1 rows=78 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 20:12:46 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 20:12:46 Debug: duration=1 rows=78 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 20:13:51 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions LIMIT 200
+2020-11-26 20:13:51 Debug: duration=1 rows=78 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties LIMIT 200
+2020-11-26 20:13:52 Debug: duration=1 rows=15 SELECT KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM kraj_regions KrajRegions
+2020-11-26 20:13:52 Debug: duration=1 rows=78 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM okres_counties OkresCounties WHERE OkresCounties.kraj_region_id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,28)
+2020-11-26 20:15:01 Debug: duration=5 rows=5 SHOW FULL COLUMNS FROM `obec_cities`
+2020-11-26 20:15:01 Debug: duration=3 rows=3 SHOW INDEXES FROM `obec_cities`
+2020-11-26 20:15:01 Debug: duration=20 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'obec_cities' AND rc.TABLE_NAME = 'obec_cities'
+2020-11-26 20:15:01 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'obec_cities'
+2020-11-26 20:15:01 Debug: duration=0 rows=0 BEGIN
+2020-11-26 20:15:01 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `kraj_regions`
+2020-11-26 20:15:01 Debug: duration=3 rows=1 SHOW INDEXES FROM `kraj_regions`
+2020-11-26 20:15:01 Debug: duration=18 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'kraj_regions' AND rc.TABLE_NAME = 'kraj_regions'
+2020-11-26 20:15:01 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'kraj_regions'
+2020-11-26 20:15:01 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM kraj_regions KrajRegions WHERE KrajRegions.id = 28 LIMIT 1
+2020-11-26 20:15:01 Debug: duration=2 rows=4 SHOW FULL COLUMNS FROM `okres_counties`
+2020-11-26 20:15:01 Debug: duration=3 rows=2 SHOW INDEXES FROM `okres_counties`
+2020-11-26 20:15:01 Debug: duration=22 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'cakecmstuto_v0_6_1' AND kcu.TABLE_NAME = 'okres_counties' AND rc.TABLE_NAME = 'okres_counties'
+2020-11-26 20:15:01 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'okres_counties'
+2020-11-26 20:15:01 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM okres_counties OkresCounties WHERE OkresCounties.id = 78 LIMIT 1
+2020-11-26 20:15:01 Debug: duration=12 rows=1 INSERT INTO obec_cities (kraj_region_id, okres_county_id, kod, nazev) VALUES (28, 78, '012345', 'Ste-Rose')
+2020-11-26 20:15:01 Debug: duration=0 rows=0 COMMIT
+2020-11-26 20:15:02 Debug: duration=4 rows=20 SELECT ObecCities.id AS `ObecCities__id`, ObecCities.kraj_region_id AS `ObecCities__kraj_region_id`, ObecCities.okres_county_id AS `ObecCities__okres_county_id`, ObecCities.kod AS `ObecCities__kod`, ObecCities.nazev AS `ObecCities__nazev`, KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev`, OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM obec_cities ObecCities INNER JOIN kraj_regions KrajRegions ON KrajRegions.id = (ObecCities.kraj_region_id) INNER JOIN okres_counties OkresCounties ON OkresCounties.id = (ObecCities.okres_county_id) LIMIT 20 OFFSET 0
+2020-11-26 20:15:02 Debug: duration=21 rows=1 SELECT (COUNT(*)) AS `count` FROM obec_cities ObecCities INNER JOIN kraj_regions KrajRegions ON KrajRegions.id = (ObecCities.kraj_region_id) INNER JOIN okres_counties OkresCounties ON OkresCounties.id = (ObecCities.okres_county_id)
+2020-11-26 20:15:10 Debug: duration=18 rows=13 SELECT ObecCities.id AS `ObecCities__id`, ObecCities.kraj_region_id AS `ObecCities__kraj_region_id`, ObecCities.okres_county_id AS `ObecCities__okres_county_id`, ObecCities.kod AS `ObecCities__kod`, ObecCities.nazev AS `ObecCities__nazev`, KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev`, OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM obec_cities ObecCities INNER JOIN kraj_regions KrajRegions ON KrajRegions.id = (ObecCities.kraj_region_id) INNER JOIN okres_counties OkresCounties ON OkresCounties.id = (ObecCities.okres_county_id) LIMIT 20 OFFSET 6240
+2020-11-26 20:15:10 Debug: duration=13 rows=1 SELECT (COUNT(*)) AS `count` FROM obec_cities ObecCities INNER JOIN kraj_regions KrajRegions ON KrajRegions.id = (ObecCities.kraj_region_id) INNER JOIN okres_counties OkresCounties ON OkresCounties.id = (ObecCities.okres_county_id)
+2020-11-26 20:15:20 Debug: duration=2 rows=1 SELECT OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev`, KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev` FROM okres_counties OkresCounties INNER JOIN kraj_regions KrajRegions ON KrajRegions.id = (OkresCounties.kraj_region_id) WHERE OkresCounties.id = 78 LIMIT 1
+2020-11-26 20:15:20 Debug: duration=1 rows=1 SELECT ObecCities.id AS `ObecCities__id`, ObecCities.kraj_region_id AS `ObecCities__kraj_region_id`, ObecCities.okres_county_id AS `ObecCities__okres_county_id`, ObecCities.kod AS `ObecCities__kod`, ObecCities.nazev AS `ObecCities__nazev` FROM obec_cities ObecCities WHERE ObecCities.okres_county_id in (78)
+2020-11-26 20:15:28 Debug: duration=20 rows=13 SELECT ObecCities.id AS `ObecCities__id`, ObecCities.kraj_region_id AS `ObecCities__kraj_region_id`, ObecCities.okres_county_id AS `ObecCities__okres_county_id`, ObecCities.kod AS `ObecCities__kod`, ObecCities.nazev AS `ObecCities__nazev`, KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev`, OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM obec_cities ObecCities INNER JOIN kraj_regions KrajRegions ON KrajRegions.id = (ObecCities.kraj_region_id) INNER JOIN okres_counties OkresCounties ON OkresCounties.id = (ObecCities.okres_county_id) LIMIT 20 OFFSET 6240
+2020-11-26 20:15:28 Debug: duration=18 rows=1 SELECT (COUNT(*)) AS `count` FROM obec_cities ObecCities INNER JOIN kraj_regions KrajRegions ON KrajRegions.id = (ObecCities.kraj_region_id) INNER JOIN okres_counties OkresCounties ON OkresCounties.id = (ObecCities.okres_county_id)
+2020-11-26 20:15:49 Debug: duration=25 rows=13 SELECT ObecCities.id AS `ObecCities__id`, ObecCities.kraj_region_id AS `ObecCities__kraj_region_id`, ObecCities.okres_county_id AS `ObecCities__okres_county_id`, ObecCities.kod AS `ObecCities__kod`, ObecCities.nazev AS `ObecCities__nazev`, KrajRegions.id AS `KrajRegions__id`, KrajRegions.kod AS `KrajRegions__kod`, KrajRegions.nazev AS `KrajRegions__nazev`, OkresCounties.id AS `OkresCounties__id`, OkresCounties.kraj_region_id AS `OkresCounties__kraj_region_id`, OkresCounties.kod AS `OkresCounties__kod`, OkresCounties.nazev AS `OkresCounties__nazev` FROM obec_cities ObecCities INNER JOIN kraj_regions KrajRegions ON KrajRegions.id = (ObecCities.kraj_region_id) INNER JOIN okres_counties OkresCounties ON OkresCounties.id = (ObecCities.okres_county_id) LIMIT 20 OFFSET 6240
+2020-11-26 20:15:49 Debug: duration=17 rows=1 SELECT (COUNT(*)) AS `count` FROM obec_cities ObecCities INNER JOIN kraj_regions KrajRegions ON KrajRegions.id = (ObecCities.kraj_region_id) INNER JOIN okres_counties OkresCounties ON OkresCounties.id = (ObecCities.okres_county_id)

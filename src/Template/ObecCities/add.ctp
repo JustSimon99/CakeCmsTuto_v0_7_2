@@ -31,25 +31,25 @@ echo $this->Html->script('ObecCities/add_edit', ['block' => 'scriptBottom']);
     <fieldset>
         <legend><?= __('Add Obec City') ?></legend>
         <div>
-            KrajRegions: 
+            <?= __('Regions') . ' ' . '(Kraje)' ?> : 
             <select 
                 name="kraj_region_id"
                 id="kraj-region-id" 
                 ng-model="krajRegion" 
-                ng-options="krajRegion.nazev for krajRegion in krajRegions"
+                ng-options="krajRegion.nazev for krajRegion in krajRegions track by krajRegion.id"
                 >
                 <option value=''>Select</option>
             </select>
         </div>
         <div>
-            SubkrajRegions: 
-            <!-- pre ng-show='krajRegions'>{{ krajRegions | json }}</pre -->
+            <?= __('Counties') . ' ' . '(Okresy)' ?> : 
+            <!-- pre ng-show='krajRegions'>{{ krajRegions | json }}></pre-->
             <select
                 name="okres_county_id"
                 id="okres-county-id" 
                 ng-disabled="!krajRegion" 
                 ng-model="okresCounty"
-                ng-options="okresCounty.nazev for okresCounty in krajRegion.okres_counties"
+                ng-options="okresCounty.nazev for okresCounty in krajRegion.okres_counties track by okresCounty.id"
                 >
                 <option value=''>Select</option>
             </select>

@@ -82,6 +82,7 @@ class ObecCitiesController extends AppController {
         $obecCity = $this->ObecCities->newEntity();
         if ($this->request->is('post')) {
             $obecCity = $this->ObecCities->patchEntity($obecCity, $this->request->getData());
+//            debug($obecCity); die();
             if ($this->ObecCities->save($obecCity)) {
                 $this->Flash->success(__('The obec city has been saved.'));
 
